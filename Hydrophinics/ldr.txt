@@ -1,0 +1,13 @@
+#define LDR_PIN A2
+
+void setup() {
+  Serial.begin(9600);   Start serial communication at 9600 bps
+}
+
+void loop() {
+  int lightLevel = analogRead(LDR_PIN);   Read the light level
+  Serial.print(Light Level );
+  Serial.println(lightLevel);   Print the light level
+
+  delay(1000);   Wait for a second before the next reading
+}

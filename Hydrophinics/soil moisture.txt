@@ -1,0 +1,13 @@
+#define MOISTURE_SENSOR_PIN A0
+
+void setup() {
+  Serial.begin(9600);  // Start serial communication at 9600 bps
+}
+
+void loop() {
+  int moistureValue = analogRead(MOISTURE_SENSOR_PIN);  // Read the moisture sensor value
+  Serial.print("Moisture Level: ");
+  Serial.println(moistureValue);  // Print the moisture value
+
+  delay(1000);  // Wait for a second before the next reading
+}

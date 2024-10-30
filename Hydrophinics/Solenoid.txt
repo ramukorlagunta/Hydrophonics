@@ -1,0 +1,12 @@
+#define SOLENOID_PIN 8
+
+void setup() {
+  pinMode(SOLENOID_PIN, OUTPUT);  // Set the solenoid pin as an output
+}
+
+void loop() {
+  digitalWrite(SOLENOID_PIN, HIGH);  // Open the solenoid valve
+  delay(2000);                       // Wait for 2 seconds
+  digitalWrite(SOLENOID_PIN, LOW);   // Close the solenoid valve
+  delay(2000);                       // Wait for 2 seconds
+}

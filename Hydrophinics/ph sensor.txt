@@ -1,0 +1,13 @@
+#define PH_SENSOR_PIN A1
+
+void setup() {
+  Serial.begin(9600);  // Start serial communication at 9600 bps
+}
+
+void loop() {
+  int phValue = analogRead(PH_SENSOR_PIN);  // Read the pH sensor value
+  Serial.print("pH Value: ");
+  Serial.println(phValue);  // Print the raw pH value
+
+  delay(1000);  // Wait for a second before the next reading
+}

@@ -1,0 +1,12 @@
+#define LASER_PIN 9
+
+void setup() {
+  pinMode(LASER_PIN, OUTPUT);  // Set the laser pin as an output
+}
+
+void loop() {
+  digitalWrite(LASER_PIN, HIGH);  // Turn the laser on
+  delay(1000);                    // Wait for 1 second
+  digitalWrite(LASER_PIN, LOW);   // Turn the laser off
+  delay(1000);                    // Wait for 1 second
+}
